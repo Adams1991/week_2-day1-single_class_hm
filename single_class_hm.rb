@@ -3,9 +3,10 @@ class Student
 
 
 
-  def initialize (input_name, input_cohort)
+  def initialize (input_name, input_cohort, input_language)
     @name = input_name
     @cohort = input_cohort
+    @language = input_language
   end
 
   def get_name()
@@ -24,6 +25,13 @@ class Student
     @cohort = cohort
   end
 
+  def talk()
+    "I can talk"
+  end
+
+  def say_favourite_language()
+    "I love #{@language}"
+  end
 
 
 end
