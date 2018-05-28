@@ -2,15 +2,24 @@ class Team
 
 attr_accessor(:name, :players, :coach)
 
-  def initialize (name, players, coach)
+  def initialize (name, players, coach, points)
     @name = name
     @players = players
     @coach = coach
+    @points = 0
   end
 
   def add_player(new_player)
     @players << new_player
   end
+
+  # def find_player(player_name)
+  #   return "He's in the team" if
+  # end
+
+  # def add_points(result)
+  #   if result ==
+  # end
 
 
 
