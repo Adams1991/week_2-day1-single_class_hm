@@ -19,9 +19,9 @@ attr_accessor(:name, :players, :coach)
   end
   end
 
-  # def add_points(result)
-  #   if result ==
-  # end
+  def add_points(result)
+    return @points = 3 if result == "Win"
+  end
 
 
 
