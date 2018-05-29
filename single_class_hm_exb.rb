@@ -6,7 +6,7 @@ attr_accessor(:name, :players, :coach)
     @name = name
     @players = players
     @coach = coach
-    @points = 0
+    @points = points
   end
 
   def add_player(new_player)
@@ -20,7 +20,7 @@ attr_accessor(:name, :players, :coach)
   end
 
   def add_points(result)
-    return @points = 3 if result == "Win"
+    return @points += 3 if result == "Win"
   end
 
 
