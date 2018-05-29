@@ -42,11 +42,10 @@ class TeamTest < MiniTest::Test
     assert_equal(["Bob", "Bill","Lorraine"], team.players())
   end
 
-  # def test_find_player
-  #   team  = Team.new("The Falcons",["Bob", "Bill"], "John")
-  #   team.find_player("Bob")
-  #   assert_equal("He's in the team", team.find_player("Bob"))
-  # end
+  def test_find_player
+    team  = Team.new("The Falcons",["Bob", "Bill"], "John", 0)
+    assert_equal("He's in the team", team.find_player("Bob"))
+  end
 
   # def test_add_points
   #   team  = Team.new("The Falcons",["Bob", "Bill"], "John" , 0)

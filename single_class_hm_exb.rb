@@ -13,9 +13,11 @@ attr_accessor(:name, :players, :coach)
     @players << new_player
   end
 
-  # def find_player(player_name)
-  #   return "He's in the team" if
-  # end
+  def find_player(player_name)
+    for player in @players
+    return "He's in the team" if player == player_name
+  end
+  end
 
   # def add_points(result)
   #   if result ==
